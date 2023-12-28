@@ -1,5 +1,4 @@
 To run the web app:
 
-npm install
-npm run start
+npm install && npm run start
 
