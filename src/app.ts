@@ -533,8 +533,8 @@ class App {
         
         //GUI
 
-        var updateButton = document.getElementById('updateBtn');
-        updateButton.onclick = updateFunction;
+        //var updateButton = document.getElementById('updateBtn');
+        //updateButton.onclick = updateFunction;
 
         //update distal medial and distal lateral lengths
         var distal_medial_length = document.getElementById('distal_medial_length') as HTMLElement;

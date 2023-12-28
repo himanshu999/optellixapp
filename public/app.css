@@ -22,9 +22,8 @@ body{
 #slider-container{
     position: absolute;
     right: -3%;
-    top: -39%;
     margin: 0;
-    transform: scale(0.3) translate(50%,-65%);
+    transform: scale(0.3) translate(50%,-116%);
 
 }
 
@@ -190,15 +189,12 @@ margin-bottom: 1rem;
 #hotspot-container{
 position: absolute;
 pointer-events: none;
-/* text-align: left; */
-left: 2rem;
-top: 3%;
 }
 
 .hotspot-holder{
-transform: scale(0.3) translate(-100%);
-color: white;
-pointer-events: all;
+    transform: scale(0.3) translate(-96%, 68%);
+    color: white;
+    pointer-events: all;
 }
 
 .hotspot-holder .title{
