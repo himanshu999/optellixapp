@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Optellix App</title>
+        <link href="app.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="hotspot-container">
+            <div class="hotspot-holder">
+                <span class="title">Femur Center</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='0' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Hip Center</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='1' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Femur Proximal Canal</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='2' id="" type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Femur Distal Canal</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='3' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Medial Epicondyle</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='4' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Lateral Epicondyle</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='5' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Distal Medial Pt</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='6' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Distal Lateral Pt</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='7' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Posterior Medial Pt</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='8' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+            <div class="hotspot-holder">
+                <span class="title">Posterior Lateral Pt</span>
+                <label style="font-size: 46px;" class="btn">
+                    <input class="hotspot_anchor_input" data-index='9' type="checkbox" id="darkbutton" value="false">
+                    <span class="swipe round" id="mode-slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div id="slider-container">
+        
+        <div class="slider-holder">
+            <label>Varus Amount</label>
+            <div class="range-slider">
+                <div id="varus_slider_thumb" class="range-slider_thumb"></div>
+                <div class="range-slider_line">
+                  <div id="varus_slider_line" class="range-slider_line-fill"></div>
+                </div>
+                <input id="varus_slider_input" class="range-slider_input" type="range" value="25" min="0" max="50">
+            </div>
+        </div>
+            
+        <div class="slider-holder">
+            <label>Flexion Amount</label>
+            <div class="range-slider">
+                <div id="flexion_slider_thumb" class="range-slider_thumb"></div>
+                <div class="range-slider_line">
+                  <div id="flexion_slider_line" class="range-slider_line-fill"></div>
+                </div>
+                <input id="flexion_slider_input" class="range-slider_input" type="range" value="25" min="0" max="50">
+            </div>
+        </div>
+            
+        <div class="slider-holder">
+            <label>Distal Amount</label>
+            <div class="range-slider">
+                <div id="distal_slider_thumb" class="range-slider_thumb"></div>
+                <div class="range-slider_line">
+                  <div id="distal_slider_line" class="range-slider_line-fill"></div>
+                </div>
+                <input id="distal_slider_input" class="range-slider_input" type="range" value="10" min="5" max="60">
+            </div>
+        </div>
+
+        <div class="slider-holder">
+            <label>Bones Opacity</label>
+            <div class="range-slider">
+                <div id="bonesopacity_slider_thumb" class="range-slider_thumb"></div>
+                <div class="range-slider_line">
+                  <div id="bonesopacity_slider_line" class="range-slider_line-fill"></div>
+                </div>
+                <input id="bonesopacity_slider_input" class="range-slider_input" type="range" value="8" min="0" max="10">
+            </div>
+        </div>
+
+        <p class="toggletitle">Distal Medial Resection</p>
+        <div style="margin:0" class="slider-holder">
+            <label style="font-size: 46px;" class="btn">
+                <input id="dmr_toggle" type="checkbox" id="darkbutton" value="false">
+                <span class="swipe round" id="mode-slider"></span>
+            </label>
+        </div>
+
+        <p class="toggletitle">Display Planes?</p>
+        <div style="margin:0" class="slider-holder">
+            <label style="font-size: 46px;" class="btn">
+                <input id="display_planes_toggle" type="checkbox" id="darkbutton" value="false">
+                <span class="swipe round" id="mode-slider"></span>
+            </label>
+        </div>
+        <p class="toggletitle">Distal Medial</p>
+        <p id="distal_medial_length" class="toggletitle">0 mm</p>
+
+        <p class="toggletitle">Distal Lateral</p>
+        <p id="distal_lateral_length" class="toggletitle">0 mm</p>
+
+
+        </div>
+        <button id="updateBtn">Update</button>
+    </body>
+</html>
